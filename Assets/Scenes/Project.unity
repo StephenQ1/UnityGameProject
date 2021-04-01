@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 13964161}
   - component: {fileID: 13964160}
   - component: {fileID: 13964159}
-  - component: {fileID: 13964158}
+  - component: {fileID: 13964162}
   m_Layer: 5
   m_Name: Main Menu Button
   m_TagString: Untagged
@@ -161,18 +161,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.9}
   m_SizeDelta: {x: 250, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &13964158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13964156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb5c56d7ded674645b8fcb19ab0c3221, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &13964159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +252,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13964156}
   m_CullTransparentMesh: 0
+--- !u!114 &13964162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13964156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a289d18b2716c7b4bbae0fae208c4656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleScreen: {fileID: 1010607343}
+  gameInfoScreen: {fileID: 1960968054}
 --- !u!1 &30172104
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,7 +969,6 @@ GameObject:
   - component: {fileID: 531235907}
   - component: {fileID: 531235906}
   - component: {fileID: 531235905}
-  - component: {fileID: 531235904}
   - component: {fileID: 531235908}
   m_Layer: 5
   m_Name: Main Menu Button
@@ -996,20 +997,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -66}
   m_SizeDelta: {x: 250, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &531235904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531235902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9409e9b58b70e8488c76c48b53e1081, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleScreen: {fileID: 1010607343}
-  gameInfoScreen: {fileID: 1960968054}
 --- !u!114 &531235905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitSound: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
+  rockSound: {fileID: 0}
 --- !u!114 &685481442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2735,7 +2723,6 @@ MonoBehaviour:
   - {fileID: 6493119070721084523, guid: 3551831b66393794cbcc25589ff87a43, type: 3}
   gameOverText: {fileID: 2068770385}
   titleScreen: {fileID: 1010607343}
-  restartButton: {fileID: 0}
   mainMenuButton: {fileID: 13964159}
   isGameActive: 0
   scoreText: {fileID: 1988831723}

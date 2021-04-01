@@ -26,7 +26,8 @@ public class MainMenuButton : MonoBehaviour
     void MainMenu()
     {
         Debug.Log(button.gameObject.name + " was clicked");
-        gameInfoScreen.gameObject.SetActive(false);
         titleScreen.gameObject.SetActive(true);
+
+        gameInfoScreen.gameObject.SetActive(false);
     }
 }
