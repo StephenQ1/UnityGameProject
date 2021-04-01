@@ -16,7 +16,7 @@ public class SpawnManager : MonoBehaviour
     private int score;
     private float SpawnRangeX = 15;
     private float SpawnPosZ = 10;
-    private float startDelay = 2;
+    private float startDelay = 1;
     private float spawnInterval = 1.5f;
     private AudioSource gameAudio;
     public AudioClip rockSound;

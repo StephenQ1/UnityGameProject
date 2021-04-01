@@ -11,6 +11,7 @@ TagManager:
   - Watermelon
   - Bad
   - Fruit
+  - Collide
   layers:
   - Default
   - TransparentFX
@@ -47,4 +48,31 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 1886520267
+    locked: 0
+  - name: New Layer
+    uniqueID: 279001319
+    locked: 0
+  - name: New Layer
+    uniqueID: 4103130973
+    locked: 0
+  - name: New Layer
+    uniqueID: 2270383725
+    locked: 0
+  - name: New Layer
+    uniqueID: 2724383479
+    locked: 0
+  - name: New Layer
+    uniqueID: 175831131
+    locked: 0
+  - name: New Layer
+    uniqueID: 518352865
+    locked: 0
+  - name: New Layer
+    uniqueID: 2216843949
+    locked: 0
+  - name: New Layer
+    uniqueID: 3500357779
     locked: 0

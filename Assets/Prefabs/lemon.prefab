@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1770142203933016256}
   - component: {fileID: 1779828845867432818}
   - component: {fileID: 1794621000369022408}
-  - component: {fileID: 1794621000369022411}
   - component: {fileID: 1794621000369022410}
   - component: {fileID: 1794621000369022409}
   m_Layer: 0
@@ -31,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1793018015841865050}
   m_LocalRotation: {x: 0.49991274, y: 0.50008726, z: 0.49991274, w: -0.50008726}
   m_LocalPosition: {x: -5.5, y: 1, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 75, y: 75, z: 75}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -96,20 +95,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.016436264, y: 0.012631234, z: 0.015860558}
   m_Center: {x: -0.00006829947, y: 0.00026103406, z: 0}
---- !u!114 &1794621000369022411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793018015841865050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb5f221265efe7a48b2dac3ae9b7331c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fruitSound: {fileID: 0}
-  rockSound: {fileID: 0}
 --- !u!114 &1794621000369022410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0149594a9d9b5d244b692cd9413a3951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
 --- !u!114 &1794621000369022409
 MonoBehaviour:
   m_ObjectHideFlags: 0
