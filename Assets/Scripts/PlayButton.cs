@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayButton : MonoBehaviour
 {
     private Button button;
+    public GameObject score;
     private SpawnManager spawnManager;
 
     // Start is called before the first frame update
@@ -26,6 +27,7 @@ public class PlayButton : MonoBehaviour
     void Play()
     {
         Debug.Log(button.gameObject.name + " was clicked");
+        score.gameObject.SetActive(true);
         spawnManager.StartGame();
     }
 }

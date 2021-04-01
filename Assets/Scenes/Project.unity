@@ -266,6 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleScreen: {fileID: 1010607343}
   gameInfoScreen: {fileID: 1960968054}
+  score: {fileID: 1988831721}
 --- !u!1 &30172104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleScreen: {fileID: 1010607343}
   gameInfoScreen: {fileID: 1960968054}
+  score: {fileID: 1988831721}
 --- !u!1 &685481440 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 467560700253107588, guid: 5c296df26581026428736e7a7c297dc2,
@@ -1110,7 +1112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitSound: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
-  rockSound: {fileID: 0}
+  rockSound: {fileID: 8300000, guid: 130a177e727814a2ea78a886ab72213d, type: 3}
 --- !u!114 &685481442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2515,6 +2517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5c56d7ded674645b8fcb19ab0c3221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 1988831721}
 --- !u!1 &1706802501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,7 +2729,8 @@ MonoBehaviour:
   mainMenuButton: {fileID: 13964159}
   isGameActive: 0
   scoreText: {fileID: 1988831723}
-  rockSound: {fileID: 0}
+  rockSound: {fileID: 8300000, guid: 130a177e727814a2ea78a886ab72213d, type: 3}
+  scoreBoard: {fileID: 1988831721}
 --- !u!4 &1906240570
 Transform:
   m_ObjectHideFlags: 0

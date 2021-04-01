@@ -8,6 +8,7 @@ public class MainMenuButton : MonoBehaviour
     private Button button;
     public GameObject titleScreen;
     public GameObject gameInfoScreen;
+    public GameObject score;
     private SpawnManager spawnManager;
 
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class MainMenuButton : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(MainMenu);
+        score.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class MainMenuButton : MonoBehaviour
     {
         Debug.Log(button.gameObject.name + " was clicked");
         titleScreen.gameObject.SetActive(true);
-
         gameInfoScreen.gameObject.SetActive(false);
+        score.gameObject.SetActive(false);
     }
 }

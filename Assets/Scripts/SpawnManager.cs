@@ -20,11 +20,13 @@ public class SpawnManager : MonoBehaviour
     private float spawnInterval = 1.5f;
     private AudioSource gameAudio;
     public AudioClip rockSound;
+    public GameObject scoreBoard;
 
     // Start is called before the first frame update
     void Start()
     {
 
+        scoreBoard.gameObject.SetActive(false);
         //gameOverText.gameObject.SetActive(true);
     }
 
@@ -52,7 +54,7 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnRandomFruit", startDelay, spawnInterval);
         isGameActive = true;
-
+        scoreBoard.gameObject.SetActive(true);
         titleScreen.gameObject.SetActive(false);
     }
 
@@ -60,6 +62,7 @@ public class SpawnManager : MonoBehaviour
     {
         gameOverText.gameObject.SetActive(true);
         mainMenuButton.gameObject.SetActive(true);
+        scoreBoard.gameObject.SetActive(false);
         //mainMenuButton.gameObject.SetActive(true);
         isGameActive = false;
     }
@@ -69,6 +72,7 @@ public class SpawnManager : MonoBehaviour
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
+        scoreBoard.gameObject.SetActive(false);
         /*
         gameOverText.gameObject.SetActive(false);
         restartButton.gameObject.SetActive(false);
