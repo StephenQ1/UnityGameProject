@@ -8,27 +8,41 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public float speed = 10.0f;
     private float xBoundary = 15.0f;
+    public bool GameOver = false;
+    private AudioSource gameAudio;
+    public AudioClip rockSound;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (transform.position.x < -xBoundary)
+        
+            if (transform.position.x < -xBoundary)
+            {
+                transform.position = new Vector3(-xBoundary, transform.position.y, transform.position.z);
+            }
+            if (transform.position.x > xBoundary)
+            {
+                transform.position = new Vector3(xBoundary, transform.position.y, transform.position.z);
+            }
+            horizontalInput = horizontalInput = Input.GetAxis("Horizontal");
+        if (GameOver != true)
         {
-            transform.position = new Vector3(-xBoundary, transform.position.y, transform.position.z);
-        }
-        if (transform.position.x > xBoundary)
-        {
-            transform.position = new Vector3(xBoundary, transform.position.y, transform.position.z);
-        }
-        horizontalInput = horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+            transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
+        }
+        }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Bad"))
+        {
+            GameOver = true;
+        }
     }
+
 }

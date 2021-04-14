@@ -19,7 +19,6 @@ public class SpawnManager : MonoBehaviour
     private float startDelay = 1;
     private float spawnInterval = 1.5f;
     private AudioSource gameAudio;
-    public AudioClip rockSound;
     public GameObject scoreBoard;
 
     // Start is called before the first frame update
