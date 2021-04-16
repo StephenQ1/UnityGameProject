@@ -9,13 +9,12 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     private float xBoundary = 15.0f;
     public bool GameOver = false;
-    private AudioSource gameAudio;
-    public AudioClip rockSound;
+    private Animator playerAnim;
 
     // Start is called before the first frame update
     void Start()
     {
-        gameAudio = GetComponent<AudioSource>();
+        playerAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,6 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bad"))
         {
+            playerAnim.SetTrigger("Trigger");
             GameOver = true;
         }
     }
