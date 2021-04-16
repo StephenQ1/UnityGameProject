@@ -71,7 +71,7 @@ public class SpawnManager : MonoBehaviour
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-        scoreBoard.gameObject.SetActive(false);
+        //scoreBoard.gameObject.SetActive(false);
         /*
         gameOverText.gameObject.SetActive(false);
         restartButton.gameObject.SetActive(false);
